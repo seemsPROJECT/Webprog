@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     setcookie("pFontSize", $_POST["pFontSize"], time() + (86400 * 30), "/");
     
     // Redirect ke halaman yang sama untuk menghindari resubmission formulir
-    header("Location: add.php");
+    header("Location: index.php");
     exit;
 }
 // Membaca nilai cookie untuk menampilkan sebagai nilai default di formulir
